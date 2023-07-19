@@ -11,7 +11,7 @@ export default function Home() {
       <header className="header">
         <nav className='nav-container'>
           <div className="logo-left">
-            <img src={logo.src} width="100px"/>
+            <Image src={logo.src} width={100} height={100} alt='logo'/>
           </div>
           <div className='nav-middle'>
             <ul>
@@ -28,7 +28,7 @@ export default function Home() {
       <main>
         <div id='home' className='profile-container'>
           <div className='profile'>
-            <Image src={profilePic.src} className='profilePic' alt='Profile picture' />
+            <Image src={profilePic.src} width={300} height={300} className='profilePic' alt='Profile picture' />
             <p>Hi there, I'm Chenxi and I am a self taught software developer!</p>
           </div>
         </div>
@@ -42,14 +42,14 @@ export default function Home() {
           <div>
             <div className='project'>
               <h3>Random Quote Generator</h3>
-              <a className='p1Img' target='_blank' href='https://stunning-praline-dc2ee0.netlify.app/'><Image src={project1.src} alt='Random Quote Img'/></a>
+              <a className='p1Img' target='_blank' href='https://stunning-praline-dc2ee0.netlify.app/'><Image className='img' src={project1.src} width={900} height={600} alt='Random Quote Img'/></a>
               <p>
                 This is the first Project that I worked on, it's a simple quote generator.
                 I implemented an API that has random quotes.
               </p>
             </div>
             <div className='project'>
-              <a className='p1Img' target='_blank' href='https://luminous-begonia-d93676.netlify.app/'><Image src={project2.src} alt='calculator app' /></a>
+              <a className='p1Img' target='_blank' href='https://luminous-begonia-d93676.netlify.app/'><Image className='img' src={project2.src} width={900} height={600} alt='calculator app' /></a>
               <p>
                 This is another project that i worked on, this is a calculator web app.
               </p>

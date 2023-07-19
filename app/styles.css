@@ -76,7 +76,6 @@ button:hover {
 }
 
 .profilePic {
-    width: 200px;
     border-radius: 100%;
 }
 
@@ -101,8 +100,4 @@ button:hover {
 .p1Img {
     display: inline-block;
     text-align: center;
-}
-
-.p1Img img{
-    width: 50%;
 }
