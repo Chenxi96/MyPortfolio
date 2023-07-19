@@ -1,4 +1,5 @@
 import './styles.css';
+import Image from 'next/image';
 import logo from '../public/logobeb1.svg';
 import profilePic from '../public/beb 1.svg';
 import project1 from '../public/Screenshot 2023-07-17 at 7.49.25 PM.png';
@@ -27,7 +28,7 @@ export default function Home() {
       <main>
         <div id='home' className='profile-container'>
           <div className='profile'>
-            <img src={profilePic.src} className='profilePic' />
+            <Image src={profilePic.src} className='profilePic' alt='Profile picture' />
             <p>Hi there, I'm Chenxi and I am a self taught software developer!</p>
           </div>
         </div>
@@ -41,14 +42,14 @@ export default function Home() {
           <div>
             <div className='project'>
               <h3>Random Quote Generator</h3>
-              <a className='p1Img' target='_blank' href='https://stunning-praline-dc2ee0.netlify.app/'><img src={project1.src} alt='Random Quote Img'/></a>
+              <a className='p1Img' target='_blank' href='https://stunning-praline-dc2ee0.netlify.app/'><Image src={project1.src} alt='Random Quote Img'/></a>
               <p>
                 This is the first Project that I worked on, it's a simple quote generator.
                 I implemented an API that has random quotes.
               </p>
             </div>
             <div className='project'>
-              <a className='p1Img' target='_blank' href='https://luminous-begonia-d93676.netlify.app/'><img src={project2.src} /></a>
+              <a className='p1Img' target='_blank' href='https://luminous-begonia-d93676.netlify.app/'><Image src={project2.src} alt='calculator app' /></a>
               <p>
                 This is another project that i worked on, this is a calculator web app.
               </p>
