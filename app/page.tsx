@@ -1,95 +1,65 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import './styles.css';
+import logo from '../public/logobeb1.svg';
+import profilePic from '../public/beb 1.svg';
+import project1 from '../public/Screenshot 2023-07-17 at 7.49.25 PM.png';
+import project2 from '../public/second Project.png';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div>
+      <header className="header">
+        <nav className='nav-container'>
+          <div className="logo-left">
+            <img src={logo.src} width="100px"/>
+          </div>
+          <div className='nav-middle'>
+            <ul>
+              <li className="home"><a href='#home'>Home</a></li>
+              <li className="portfolio"><a href='#portfolio'>Portfolio</a></li>
+              <li className="about"><a href='#about'>About</a></li>
+            </ul>
+          </div>
+          <div className='nav-right'>
+            <button className='contactButton'>Contact</button>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div id='home' className='profile-container'>
+          <div className='profile'>
+            <img src={profilePic.src} className='profilePic' />
+            <p>Hi there, I'm Chenxi and I am a self taught software developer!</p>
+          </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
+        <div id='about' className='aboutPage'>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            As a software developer I love the grind of getting better, either in terms of
+            updating code enough for prduction in a certain project or learning a new coding language.
           </p>
-        </a>
-      </div>
-    </main>
+        </div>
+        <div id='portfolio' className='portfolio-container'>
+          <div>
+            <div className='project'>
+              <h3>Random Quote Generator</h3>
+              <a className='p1Img' target='_blank' href='https://stunning-praline-dc2ee0.netlify.app/'><img src={project1.src} alt='Random Quote Img'/></a>
+              <p>
+                This is the first Project that I worked on, it's a simple quote generator.
+                I implemented an API that has random quotes.
+              </p>
+            </div>
+            <div className='project'>
+              <a className='p1Img' target='_blank' href='https://luminous-begonia-d93676.netlify.app/'><img src={project2.src} /></a>
+              <p>
+                This is another project that i worked on, this is a calculator web app.
+              </p>
+            </div>
+            <div className='project3'></div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p></p>
+      </footer>
+    </div>
   )
 }

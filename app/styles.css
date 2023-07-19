@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../public/Montserrat/static/Montserrat-Light.ttf');
+}
+
+* {
+    font-family: 'Montserrat';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(183, 54, 54);
+}
+
+/* Navbar */
+.header {
+    padding: 20px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.logo-left {
+    display: flex;
+    flex-grow: 1;
+}
+
+.nav-middle {
+    display: flex;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-right: 40px;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-right {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contactButton {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Profile Page */
+.profile-container {
+    padding-top: 10px;
+    border: 1px solid black;
+}
+
+.profilePic {
+    width: 200px;
+    border-radius: 100%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* about Page */
+.aboutPage {
+    text-align: center;
+}
+
+/* project 1 */
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p1Img {
+    display: inline-block;
+    text-align: center;
+}
+
+.p1Img img{
+    width: 50%;
+}
