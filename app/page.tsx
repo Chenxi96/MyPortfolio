@@ -29,7 +29,7 @@ export default function Home() {
         <div id='home' className='profile-container'>
           <div className='profile'>
             <Image src={profilePic.src} width={300} height={300} className='profilePic' alt='Profile picture' />
-            <p>Hi there, I'm Chenxi and I am a self taught software developer!</p>
+            <p>Hi there, I&quot;m Chenxi and I am a self taught software developer!</p>
           </div>
         </div>
         <div id='about' className='aboutPage'>
@@ -44,7 +44,7 @@ export default function Home() {
               <h3>Random Quote Generator</h3>
               <a className='p1Img' target='_blank' href='https://stunning-praline-dc2ee0.netlify.app/'><Image className='img' src={project1.src} width={900} height={600} alt='Random Quote Img'/></a>
               <p>
-                This is the first Project that I worked on, it's a simple quote generator.
+                This is the first Project that I worked on, it&quot;s a simple quote generator.
                 I implemented an API that has random quotes.
               </p>
             </div>
