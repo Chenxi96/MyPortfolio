@@ -77,6 +77,8 @@ button:hover {
 
 .profilePic {
     border-radius: 100%;
+    object-fit: cover;
+    object-position: 60% 80%;
 }
 
 .profile {

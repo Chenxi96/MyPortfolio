@@ -1,7 +1,7 @@
 import './styles.css';
 import Image from 'next/image';
 import logo from '../public/logobeb1.svg';
-import profilePic from '../public/beb 1.svg';
+import profilePic from '../public/IMG_3329.jpeg';
 import project1 from '../public/Screenshot 2023-07-17 at 7.49.25 PM.png';
 import project2 from '../public/second Project.png';
 
@@ -28,7 +28,7 @@ export default function Home() {
       <main>
         <div id='home' className='profile-container'>
           <div className='profile'>
-            <Image src={profilePic.src} width={300} height={300} className='profilePic' alt='Profile picture' />
+            <Image src={profilePic.src} className='profilePic' alt='Profile picture' width={300} height={300}  />
             <p>Hi there, I&quot;m Chenxi and I am a self taught software developer!</p>
           </div>
         </div>
