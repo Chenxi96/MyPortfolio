@@ -1,7 +1,8 @@
 import './styles.css';
 import Image from 'next/image';
-import project1 from '../public/Screenshot 2023-07-17 at 7.49.25 PM.png';
+import project3 from '../public/Screenshot 2023-07-17 at 7.49.25 PM.png';
 import project2 from '../public/second Project.png';
+import project1 from '../public/E-commerce.png'
 
 export default function Home() {
   return (
@@ -16,19 +17,27 @@ export default function Home() {
             </div>
           </div>
           <div id='portfolio' className='portfolio-container'>
-            <div className='project1'>
+            <div className='project'>
+              <a className='p1Img' target='_blank' href='https://five-wear.vercel.app/'>
+                <Image className='img' src={project1.src} fill={true} alt='calculator app' />
+                <p className='project-description'>
+                  This is a project that I worked on for a client, it is a E-commerce website.
+                </p>
+              </a>
+            </div>
+            <div className='project'>
                 <a className='p1Img' target='_blank' href='https://stunning-praline-dc2ee0.netlify.app/'>
                   <h3 className='project-title'>Random Quote Generator</h3>
-                  <Image className='img' src={project1.src} fill={true}  alt='Random Quote Img'/>
+                  <Image className='img' src={project2.src} fill={true}  alt='Random Quote Img'/>
                   <p className='project-description'>
                     This is the first Project that I worked on, it&quot;s a simple quote generator.
                     I implemented an API that has random quotes.
                   </p>
                 </a>
             </div>
-            <div className='project2'>
+            <div className='project'>
               <a className='p1Img' target='_blank' href='https://luminous-begonia-d93676.netlify.app/'>
-                <Image className='img' src={project2.src} fill={true} alt='calculator app' />
+                <Image className='img' src={project3.src} fill={true} alt='calculator app' />
                 <p className='project-description'>
                   This is another project that I worked on, this is a calculator web app.
                 </p>
